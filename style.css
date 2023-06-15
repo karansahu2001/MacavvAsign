@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  }
+  
+  body::-webkit-scrollbar {
+    width: 0; /* For Chrome, Safari, and Opera */
+    display: none; /* Hide scrollbar */
+  }
+  
+
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0.5rem;
+    --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+    --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+    --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+    --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+    --bs-navbar-toggler-padding-y: 0.25rem;
+    --bs-navbar-toggler-padding-x: 0.75rem;
+    --bs-navbar-toggler-font-size: 1.25rem;
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+    --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+    --bs-navbar-toggler-focus-width: 0.25rem;
+    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+    --bs-bg-opacity: 1;
+    background-color: #0e0e0e !important;
+    position: fixed;
+    width: 100%;
+    z-index: +3;
+
+}
+
+
+.navbar-brand {
+    color: white;
+}
+
+
+.btn {
+
+    background: none;
+    color: #da5151;
+    border: 1px solid #da5151;
+    border-radius: 2px;
+    padding: 0.6rem 1rem;
+}
+
+.button {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    background: none;
+    color: #da5151;
+    border: 1px solid #da5151;
+    border-radius: 2px;
+    transition: all .35s;
+}
+
+.button span{
+    position: relative;
+    z-index: 2;
+}
+
+.button:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s;
+}
+
+.button:hover{
+    color: black;
+}
+
+
+.button:hover:after {
+    width: 100%;
+}
+
+.nav-link {
+    position: relative;
+    margin-right: 14px;
+    display: initial;
+    background-color: #0e0e0e00;
+    width: auto;
+    height: auto;
+    color: rgb(222, 221, 221);
+    text-decoration: none;
+    transition: all .35s;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+
+
+.nav-link:hover:after{
+    width: 100%;
+
+}
+.nav-link:hover{
+    background: #ff003b;
+    
+}
+
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 2rem;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+
+.left-container {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+}
+
+
+.session-1 {
+    background: url('./assets/image/e11ade7991e95887830cc798babe0323.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 697px;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    padding-top: 7rem;
+}
+
+
+.p-12 {
+    padding-top: 14rem;
+    padding-bottom: 4rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.m-a {
+    margin: auto;
+}
+
+.m-t-4 {
+    margin-top: 4rem;
+}
+
+.session-1-item {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.session-1-item ul {
+    margin-right: 2rem;
+}
+
+.helf-width p {
+    margin: 2rem 0rem;
+}
+
+.session-2 {
+    background-color: #ff1f71;
+    padding: 5rem;
+}
+
+
+.helf-width {
+    width: 50%;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 120px 0px;
+    grid-auto-flow: row;
+
+}
+
+.img-box {
+    height: 160px;
+    width: 160px;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    display: flex;
+}
+
+.f-box {
+    display: flex;
+    align-items: center;
+}
+
+
+.session-3 {
+    padding: 7rem;
+    background-color: #131313;
+    color: white;
+}
+
+.services-heading div {
+    width: 100%;
+    margin: auto 2rem
+}
+
+.services-img {
+    width: 387px;
+    height: 164px;
+
+    margin: 2rem 0rem;
+    display: flex;
+}
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,700");
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+div.c {
+    position: relative;
+    margin: 2em;
+}
+
+input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: 0;
+}
+
+h1 {
+
+    color: white;
+
+    position: relative;
+}
+
+label::before {
+
+    display: inline-block;
+    border: 15px solid transparent;
+    border-left: 20px solid white;
+}
+
+label {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+div.p {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+
+}
+
+input:checked~h1 label::before {
+    border-left: 15px solid transparent;
+    border-top: 20px solid white;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+input:checked~h1~div.p {
+    max-height: 100px;
+}
+
+a {
+    color: steelblue;
+}
+
+.s-heading {
+    font-size: 1rem;
+}
+
+.c {
+    border-bottom: 1px solid white;
+    padding-bottom: 1rem;
+}
+
+
+
+
+
+
+/* Add the existing CSS styles for the wave animation */
+
+.wave2 {
+    z-index: -2;
+
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-image: linear-gradient(to right, #fafafa 0%, #d8d8d8 100%); */
+  }
+  
+  
+
+/*   
+body {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to right, #fafafa 0%, #d8d8d8 100%);
+  } */
+  
+  /* .wave {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  .wave__container {
+    position: absolute;
+    top: 13%;
+    left: 28%;
+    right: 0;
+    z-index: -1;
+    bottom: 0;
+  }
+  
+  .wave__circle {
+    position: absolute;
+    background-color: transparent;
+    border: 10px solid yellow;
+    border-radius: 50%;
+    box-shadow: inset var(--shadowShift) var(--shadowShift) var(--shadowBlur)
+        rgba(55 84 170 / 0.2),
+      var(--shadowShift) var(--shadowShift) var(--shadowBlur)
+        rgba(55 84 170 / 0.2),
+      inset calc(var(--shadowShift) * -1) calc(var(--shadowShift) * -1)
+        var(--shadowBlur) rgba(255 255 255 / 1),
+      calc(var(--shadowShift) * -1) calc(var(--shadowShift) * -1)
+        var(--shadowBlur) rgba(255 255 255 / 1);
+    filter: blur(3px);
+  
+    animation-name: ripple;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0, 0.2, 0.8, 1);
+    animation-iteration-count: infinite;
+    background-color: yellow;
+  }
+  
+  .wave__container .wave__circle:nth-child(2) {
+    animation-delay: -1s;
+  }
+  
+  .wave__container .wave__circle:nth-child(3) {
+    animation-delay: -2s;
+  }
+  
+  @keyframes ripple {
+    0% {
+      top: 250px;
+      left: 250px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+  
+    100% {
+      top: 0;
+      left: 0;
+      width: 500px;
+      height: 500px;
+      opacity: 0;
+    }
+  }
+  
